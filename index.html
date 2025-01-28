@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>GUESS GAME</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-wrapper">
+        <h1 class="header-wrapper__title">Guess Game</h1>
+        <h2 class="header-wrapper__text">Guess A Number Between 1 To 10</h2>
+        <h3
+          id="modal"
+          class="header-wrapper__text header-wrapper__text--result"
+        ></h3>
+      </div>
+      <div class="display">
+        <input
+          type="text"
+          id="display__input"
+          placeholder="Guess A Number"
+          disabled
+        />
+      </div>
+      <div class="numpad-wrapper">
+        <input type="button" class="numpad-wrapper__btns" value="0" />
+        <input type="button" class="numpad-wrapper__btns" value="1" />
+        <input type="button" class="numpad-wrapper__btns" value="2" />
+        <input type="button" class="numpad-wrapper__btns" value="3" />
+        <input type="button" class="numpad-wrapper__btns" value="4" />
+        <input type="button" class="numpad-wrapper__btns" value="5" />
+        <input type="button" class="numpad-wrapper__btns" value="6" />
+        <input type="button" class="numpad-wrapper__btns" value="7" />
+        <input type="button" class="numpad-wrapper__btns" value="8" />
+        <input type="button" class="numpad-wrapper__btns" value="9" />
+        <input
+          type="button"
+          id="c"
+          class="numpad-wrapper__btns numpad-wrapper__btns--special-btn"
+          value="C"
+        />
+        <input
+          type="button"
+          id="ca"
+          class="numpad-wrapper__btns numpad-wrapper__btns--special-btn"
+          value="CA"
+        />
+        <button
+          type="button"
+          id="submit-btn"
+          class="numpad-wrapper__submit-btn"
+        >
+          See The Result
+        </button>
+        <button
+          type="button"
+          id="change-btn"
+          class="numpad-wrapper__submit-btn"
+        >
+          Change The Number
+        </button>
+      </div>
+    </div>
+    <ul id="context-menu">
+      <li id="copy-btn-context-menu" class="context-menu__item">
+        <img src="./images/copy.png" alt="copy" class="context-menu__icon" />
+        <p class="context-menu__title">Copy</p>
+      </li>
+      <li id="cut-btn-context-menu" class="context-menu__item">
+        <img src="./images/cut.png" alt="cut" class="context-menu__icon" />
+        <p class="context-menu__title">Cut</p>
+      </li>
+      <li class="context-menu__item">
+        <img src="./images/paste.png" alt="paste" class="context-menu__icon" />
+        <p class="context-menu__title">Paste</p>
+      </li>
+      <li id="reset-btn-context-menu" class="context-menu__item">
+        <img src="./images/clear.png" alt="clear" class="context-menu__icon" />
+        <p class="context-menu__title">Clear (Reset)</p>
+      </li>
+      <li id="change-btn-context-menu" class="context-menu__item">
+        <img
+          src="./images/change.png"
+          alt="change"
+          class="context-menu__icon"
+        />
+        <p class="context-menu__title">Change Number</p>
+      </li>
+    </ul>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
