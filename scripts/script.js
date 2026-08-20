@@ -7,8 +7,6 @@ const resetBtn = $.getElementById("ca");
 const submitBtn = $.getElementById("submit-btn");
 const changeBtn = $.getElementById("change-btn");
 const contextMenu = $.getElementById("context-menu");
-const copyBtnContextMenu = $.getElementById("copy-btn-context-menu");
-const cutBtnContextMenu = $.getElementById("cut-btn-context-menu");
 const changeBtnContextMenu = $.getElementById("change-btn-context-menu");
 const resetBtnContextMenu = $.getElementById("reset-btn-context-menu");
 
@@ -72,14 +70,6 @@ numpadBtns.forEach((btn) => {
 submitBtn.addEventListener("click", submitHandler);
 
 changeBtn.addEventListener("click", changeNumberHandler);
-
-copyBtnContextMenu.addEventListener("click", () => {
-  navigator.clipboard.writeText("Guess Game");
-});
-
-cutBtnContextMenu.addEventListener("click", () => {
-  navigator.clipboard.writeText("Guess Game");
-});
 
 changeBtnContextMenu.addEventListener("click", changeNumberHandler);
 

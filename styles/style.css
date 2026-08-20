@@ -188,7 +188,7 @@ body {
   background-color: var(--light-white);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: start;
   padding: 1.2rem 2rem;
   gap: 1rem;
